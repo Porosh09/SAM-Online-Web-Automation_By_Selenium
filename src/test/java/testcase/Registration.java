@@ -9,8 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import com.fasterxml.jackson.annotation.JacksonInject.Value;
-
 import base.driver;
 
 public class Registration extends driver {
@@ -35,12 +33,14 @@ public class Registration extends driver {
 		String data1 = sheet1.getRow(0).getCell(1).getStringCellValue();
 		String data2 = sheet1.getRow(0).getCell(2).getStringCellValue();
 		String data3 = sheet1.getRow(0).getCell(3).getStringCellValue();
-		phone = (int) sheet1.getRow(0).getCell(4).getNumericCellValue();
+		
+		phone = (int) sheet1.getRow(0).getCell(4).getNumericCellValue();  //casting
+		String phone2 = String.valueOf(phone);                            // String pass
 		age = (int) sheet1.getRow(0).getCell(5).getNumericCellValue();
+		String age2 = String.valueOf(age);
+		
 		String data6 = sheet1.getRow(0).getCell(6).getStringCellValue();
 
-		String age2 = String.valueOf(age);
-		String phone2 = String.valueOf(phone);
 		
 		driver.findElement(By.xpath("//body/div[@id='wrapper']/div[@id='main']/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[1]/form[1]/div[1]/span[1]/div[1]/div[1]/input[1]")).sendKeys(data0);
 		driver.findElement(By.name("email")).sendKeys(data1);
