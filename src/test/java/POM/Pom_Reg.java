@@ -14,8 +14,8 @@ public class Pom_Reg {
 
 	WebDriver driver=null;
 	
-    int phone1;
-    int age1;
+    phone1;
+    age1;
 	
 	public void Pom_Registration(WebDriver driver) throws Exception {
 		
