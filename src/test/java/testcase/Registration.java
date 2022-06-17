@@ -25,7 +25,7 @@ public class Registration extends driver {
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Register')]")).click();
 		
-		File src = new File("C:\\Users\\HP\\Desktop\\Test\\Data.xlsx");
+		File src = new File("C:\\Users\\Rocky\\Desktop\\Test\\Data.xlsx");
 		FileInputStream fis = new FileInputStream(src);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet1 = wb.getSheetAt(0);
@@ -71,6 +71,8 @@ public class Registration extends driver {
 		
 		driver.findElement(By.xpath("//*[@id=\"stm-lms-register\"]/span/form/div[3]/div/div/button")).click();
 		Thread.sleep(5000);
+		
+		
 }
 	
 }

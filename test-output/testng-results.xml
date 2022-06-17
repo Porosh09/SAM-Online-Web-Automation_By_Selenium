@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65194" started-at="2022-06-15T03:55:08 BDT" finished-at="2022-06-15T03:56:13 BDT">
+  <suite name="Default suite" duration-ms="112623" started-at="2022-06-17T20:26:19 BDT" finished-at="2022-06-17T20:28:11 BDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65194" started-at="2022-06-15T03:55:08 BDT" finished-at="2022-06-15T03:56:13 BDT">
-      <class name="testcase.Registration">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.Registration@7e9a5fbe]" name="setup" is-config="true" duration-ms="4724" started-at="2022-06-15T03:55:03 BDT" finished-at="2022-06-15T03:55:08 BDT">
+    <test name="Default test" duration-ms="112623" started-at="2022-06-17T20:26:19 BDT" finished-at="2022-06-17T20:28:11 BDT">
+      <class name="testcase.SignIn">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.SignIn@16022d9d]" name="setup" is-config="true" duration-ms="4089" started-at="2022-06-17T20:26:14 BDT" finished-at="2022-06-17T20:26:19 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcase.Registration@7e9a5fbe]" name="login" duration-ms="65162" started-at="2022-06-15T03:55:08 BDT" finished-at="2022-06-15T03:56:13 BDT">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:testcase.SignIn@16022d9d]" name="SignIn" duration-ms="12354" started-at="2022-06-17T20:26:19 BDT" finished-at="2022-06-17T20:26:31 BDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.Registration@7e9a5fbe]" name="tearDown" is-config="true" duration-ms="709" started-at="2022-06-15T03:56:13 BDT" finished-at="2022-06-15T03:56:14 BDT">
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="profile()[pri:1, instance:testcase.SignIn@16022d9d]" name="profile" duration-ms="100181" started-at="2022-06-17T20:26:31 BDT" finished-at="2022-06-17T20:28:11 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcase.SignIn@16022d9d]" name="tearDown" is-config="true" duration-ms="886" started-at="2022-06-17T20:28:11 BDT" finished-at="2022-06-17T20:28:12 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcase.Registration -->
+      </class> <!-- testcase.SignIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
